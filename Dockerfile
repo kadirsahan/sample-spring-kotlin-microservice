@@ -14,7 +14,7 @@
 FROM openjdk:17-alpine
 VOLUME /tmp
 USER 1000
-ARG DEPENDENCY=/workspace/app/target/dependency
-COPY --from=build /workspace/app/target/sample-spring-kotlin-microservice-1.5.2.jar app.jar
+# ARG DEPENDENCY=/workspace/app/target/dependency
+# COPY /workspace/app/target/sample-spring-kotlin-microservice-1.5.2.jar app.jar
 COPY /workspace/target/sample-spring-kotlin-microservice-1.5.2.jar app.jar
 ENTRYPOINT ["java","-jar", "app.jar"]
