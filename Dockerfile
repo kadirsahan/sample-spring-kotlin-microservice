@@ -16,5 +16,5 @@ VOLUME /tmp
 USER 1000
 # ARG DEPENDENCY=/workspace/app/target/dependency
 # COPY /workspace/app/target/sample-spring-kotlin-microservice-1.5.2.jar app.jar
-COPY /workspace/sample-spring-kotlin-microservice/target/sample-spring-kotlin-microservice-1.5.3.jar app.jar
+COPY ./target/sample-spring-kotlin-microservice-1.5.3.jar app.jar
 ENTRYPOINT ["java","-jar", "app.jar"]
