@@ -11,7 +11,7 @@
 
 
 # FROM eclipse-temurin:21-ubi9-minimal
-FROM alpine:latest
+FROM openjdk:17-alpine
 VOLUME /tmp
 USER 1000
 ARG DEPENDENCY=/workspace/app/target/dependency
